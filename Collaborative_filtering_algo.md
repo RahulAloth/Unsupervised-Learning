@@ -15,7 +15,8 @@ Collaborative filtering leverages the collective wisdom of users to make persona
 user experience across various platforms.
 Collaborative Filtering Algorithm Explanation
 Feature Learning:
-If you don’t have predefined features (like how much a movie is a romance or action movie), you can learn these features from the data.
+If you don’t have predefined features (like how much a movie is a romance or action movie), you can learn these
+features from the data.
 Replace unknown feature values with placeholders (e.g., question marks).
 Parameter Initialization:
 Assume you have learned parameters for users (e.g., ( w^1, w^2, w^3, w^4 ) and biases ( b^1, b^2, b^3, b^4 )).
@@ -33,19 +34,23 @@ Binary Labels in Recommender Systems:
 Instead of a user giving a rating (e.g., 1 to 5 stars), they indicate whether they like or dislike an item.
 This can be generalized similarly to how linear regression is extended to logistic regression for binary outcomes.
 Example of Binary Labels:
-A dataset with binary labels might use 1 to indicate a user liked or engaged with a movie, and 0 to indicate they did not.
-For instance, Alice might watch “Love at Last” to the end (label 1), but stop “Nonstop Car Chases” after a few minutes (label 0).
+A dataset with binary labels might use 1 to indicate a user liked or engaged with a movie, and 0 to indicate they did 
+not.
+For instance, Alice might watch “Love at Last” to the end (label 1), but stop “Nonstop Car Chases” after a few minutes 
+(label 0).
 Handling Unseen Items:
 A question mark (?) denotes that the user has not seen the item yet and thus hasn’t rated it.
 Generalizing the Algorithm:
-The collaborative filtering algorithm can be adapted to predict binary labels by estimating how likely users are to like items they haven’t rated yet.
+The collaborative filtering algorithm can be adapted to predict binary labels by estimating how likely users are to 
+like items they haven’t rated yet.
 This involves predicting whether users like or dislike items based on their past interactions.
 Examples of Binary Labels in Different Contexts:
 Online Shopping: 1 if a user purchases an item after seeing it, 0 if they don’t, and ? if they haven’t seen it.
 Social Media: 1 if a user likes or favorites an item, 0 if they don’t, and ? if they haven’t seen it.
 User Behavior: 1 if a user spends a certain amount of time on an item, 0 if they don’t, and ? if they haven’t seen it.
 Implicit Ratings:
-Ratings can be inferred from user behavior, such as clicks on ads in online advertising (1 for clicks, 0 for no clicks, and ? for not shown).
+Ratings can be inferred from user behavior, such as clicks on ads in online advertising (1 for clicks, 0 for no clicks,
+and ? for not shown).
 Meaning of Binary Labels:
 1: User engaged with the item (e.g., clicked, spent time, liked, or purchased).
 0: User did not engage with the item.
@@ -53,7 +58,8 @@ Meaning of Binary Labels:
 Adapting the Algorithm:
 The algorithm is adapted to predict binary outcomes (1 or 0) instead of continuous ratings.
 This involves using a similar approach to logistic regression for binary classification.
-! By adapting the collaborative filtering algorithm to work with binary labels, you can significantly expand its range of applications. Here’s a summary of the key points:
+! By adapting the collaborative filtering algorithm to work with binary labels, you can significantly expand its range 
+of applications. Here’s a summary of the key points:
 
 Cost Function for Binary Labels:
 The cost function is adapted to handle binary labels (e.g., 1 for like, 0 for dislike).
@@ -64,3 +70,4 @@ This is akin to how linear regression is extended to logistic regression for bin
 Expanded Applications:
 This generalization allows the algorithm to be used in various contexts where user feedback is binary.
 Examples include online shopping (purchase or not), social media (like or not), and online advertising (click or not).
+
